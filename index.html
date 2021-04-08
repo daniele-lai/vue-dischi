@@ -28,7 +28,7 @@
     </header>
     <div class="container">
       <div class="wrapper">
-        <div v-if="changeGenre == album.genre" class="card" v-for="album in albums">
+        <div v-if="changeGenre == album.genre || changeGenre == ''" class="card" v-for="album in albums">
           <img :src="album.poster" alt="album.title">
           <h2>{{album.title}}</h2>
           <h3>{{album.author}}</h3>
