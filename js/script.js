@@ -5,7 +5,8 @@ var app = new Vue({
   el: "#app",
   data: {
     albums: [],
-    genres: []
+    genres: [],
+    changeGenre: ""
   },
   //1. Stampiamo una card per album
   mounted: function () {
