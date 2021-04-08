@@ -8,6 +8,7 @@
 header {
   height: 70px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: #2E3A46;
 }
@@ -15,6 +16,11 @@ header {
 header img {
   height: 50px;
   margin-left: 20px;
+}
+
+.select {
+  color: #fff;
+  margin-right: 20px;
 }
 
 .container {
