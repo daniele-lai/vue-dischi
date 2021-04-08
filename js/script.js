@@ -12,11 +12,13 @@ var app = new Vue({
     axios.get("https://flynn.boolean.careers/exercises/api/array/music")
       .then((response) => {
         this.albums = response.data.response;
+        // Cicliamo l'array albums per estrapolare i generi per le options
+        this.albums.forEach((item) => {
+          if (this.genres.includes(item.genre) == false) {
+            this.genres.push(item.genre);
+          }
+        });
+        console.log(this.genres);
       });
-  },
-  methods: {
-    funzioneAlert: function() {
-      alert("ciao");
-    }
   }
 });

@@ -21,7 +21,7 @@
       <div class="select">
         <label for="genre">Choose your genre</label>
         <select name="genre">
-          <option value=""></option>
+          <option v-for="genre in genres" value="genre">{{genre}}</option>
         </select>
       </div>
     </header>
